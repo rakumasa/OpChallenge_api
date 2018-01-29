@@ -8,12 +8,17 @@ use app\models\UsersSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\rest\ActiveController;
 
 /**
  * UsersController implements the CRUD actions for Users model.
  */
-class UsersController extends Controller
+class UsersController extends ActiveController
 {
+
+  public $modelClass = 'app\models\Users';
+
+
     /**
      * @inheritdoc
      */
