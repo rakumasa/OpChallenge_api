@@ -17,7 +17,7 @@ $config = [
             'cookieValidationKey' => '0_5KIjBRXEuk693-ndDSUCs2lFSuyOHf',
             'parsers' => [
               'application/json' => 'yii\web\JsonParser',
-            ]
+          ]
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
@@ -49,7 +49,6 @@ $config = [
 
         'urlManager' => [
             'enablePrettyUrl' => true,
-            'enableStrictParsing' => true,
             'showScriptName' => false,
             'rules' => [
               'class' => 'yii\rest\UrlRule',
