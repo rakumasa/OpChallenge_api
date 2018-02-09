@@ -25,6 +25,8 @@ use Yii;
  * @property int $updated_at
  * @property int $last_login
  */
+
+ // \yii\db\ActiveRecord is an extensions to access to database
 class Users extends \yii\db\ActiveRecord
 {
     /**
