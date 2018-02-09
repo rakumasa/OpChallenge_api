@@ -54,7 +54,7 @@ $config = [
               'controller' => 'users',
               '<controller:\w+>/<id:\d+>' => '<controller>/view',
               '<controller:\w+>/<id:\d+>' => '<controller>/delete',
-
+              '<controller:\w+>/<id:\d+>' => '<controller>/update',
             ],
         ],
     ],
