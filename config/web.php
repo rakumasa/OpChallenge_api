@@ -46,14 +46,13 @@ $config = [
             ],
         ],
         'db' => $db,
-
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
               'class' => 'yii\rest\UrlRule',
               'controller' => 'users',
-              // 'tokens' => [ '{id}' => '<id:\\d[\\d,]*>' ],
+              '<controller:\w+>/<id:\d+>' => '<controller>/view',
             ],
         ],
     ],
