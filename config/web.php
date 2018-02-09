@@ -53,6 +53,8 @@ $config = [
               'class' => 'yii\rest\UrlRule',
               'controller' => 'users',
               '<controller:\w+>/<id:\d+>' => '<controller>/view',
+              '<controller:\w+>/<id:\d+>' => '<controller>/delete',
+
             ],
         ],
     ],
